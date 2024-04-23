@@ -8,7 +8,7 @@ namespace Minidev.Core.SaveLoad
     {
         public GameplayData Load()
         {
-            string json = PlayerPrefs.GetString("SAFVE");
+            string json = PlayerPrefs.GetString("SAVE");
             if (string.IsNullOrEmpty(json))
                 return new GameplayData();
             else
